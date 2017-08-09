@@ -1,0 +1,397 @@
+html, body, button, input, select, textarea {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    color: #777777;
+}
+
+h1,h2,h3,h4,h5,h6{
+    clear: both;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif !important;
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
+    margin-top: 0;
+    color: #444444;
+}
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a {
+    color: #444444;
+    text-decoration: none;
+    cursor: pointer;
+}
+h1,.fs-1{
+    font-size: 33px;
+    font-size: 2.0625rem;
+}
+h2,.fs-2{
+    font-size: 25px;
+    font-size: 1.5625rem;
+}
+h3,.fs-3{
+    font-size: 22px;
+    font-size: 1.375rem;
+}
+h4,.fs-4{
+    font-size: 20px;
+    font-size: 1.25rem;
+}
+h5,.fs-5{
+    font-size: 18px;
+    font-size: 1.125rem;
+}
+h6,.fs-6{
+    font-size: 16px;
+    font-size: 1rem;
+}
+
+h1{ line-height: 1.3; }
+h2{ line-height: 1.2; }
+
+@media (min-width: 768px) {
+    h1{
+        font-size: 40px;
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 32px;
+        font-size: 2rem;
+    }
+}
+a{
+    cursor: pointer;
+    color: #e86240;
+    text-decoration: none;
+}
+a:hover{ color: #777; }
+
+input,button,textarea,.ldButton{
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+input:hover,button:hover,textarea:hover,.ldButton:hover{
+    opacity: 0.9
+}
+input:focus,textarea:focus{
+    border-color: #e86240;
+    outline: none;
+}
+textarea{ max-width: 100%; }
+button,.ldButton{
+    color: #fff;
+    background: #e86240;
+    border: 1px solid #e86240;
+    overflow: hidden;
+    font-weight: bold;
+    text-decoration: none;
+}
+button.secondary,.ldButton.secondary{
+    color: #eee;
+    background: transparent;
+    border-color: #eee;
+}
+button:hover,.ldButton:hover{
+    color: #fff;
+    text-decoration: none;
+}
+button.secondary:hover,.ldButton.secondary:hover{
+    opacity: 1;
+    color: #444;
+    background: #fff;
+}
+
+/* ---------- Nav Bar ----------*/
+nav button{ width: initial; }
+.navbar-transparent{
+    background: none;
+    padding: 15px 0px;
+    background: rgba(0,0,0,0.0);
+    -webkit-transition: 300ms linear;
+    -moz-transition: 300ms linear;
+    -o-transition: 300ms linear;
+    transition: 300ms linear;
+}
+.navbar-transparent.darked{
+    padding: 5px 0px;
+    background: rgba(0,0,0,0.8);
+}
+.navbar-transparent .navbar-nav li > a{ color: #fff; }
+.navbar-transparent .navbar-toggle .icon-bar{ background-color: #fff; height: 3px; }
+.navbar-transparent .nav li > a:hover,
+.navbar-transparent .nav li > a:focus,
+.navbar-transparent .nav .open > a,
+.navbar-transparent .nav .open > a:hover,
+.navbar-transparent .nav .open > a:focus,
+.navbar-transparent .nav > li.dropdown.open .dropdown-menu{
+    background-color: rgba(0,0,0,0.5);
+}
+.navbar-transparent a{ cursor: pointer; }
+
+
+.site-brand{
+    float: left;
+    height: 50px;
+}
+.site-brand{
+    float: left;
+    height: 50px;
+}
+.site-brand .site-title{
+    line-height: 20px;
+    text-transform: uppercase;
+    margin: 0 !important;
+}
+.site-brand .site-title a{
+    color: #fff !important;
+    font-weight: 600;
+    font-size: 1.53rem;
+    line-height: 20px;
+    text-decoration: none;
+}
+.site-brand .site-description{
+    font-size: 0.74rem;
+    color: #fff;
+}
+.site-brand .site-brand-wrapper{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+}
+/* ---------- Nav Bar ----------*/
+
+
+/* ---------- Cover ----------*/
+.ldCover{
+    padding: 0;
+    width: 100%;
+    font-size: 1.375rem;
+    position: relative;
+    overflow: hidden;
+}
+.ldCover .ldWrapper{
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    bottom: 0px;
+}
+.ldCover.toosmall .ldContent{
+    opacity: 0;
+}
+.ldCover .ldWrapper > div{ position: relative; height: 100%; width:100%; }
+.ldCover .bg-screener{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.ldCover .bg-screener > div{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+}
+.ldCover .ldContent{
+    position: relative;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    opacity: 1;
+    -webkit-transition: 500ms linear;
+    -moz-transition: 500ms linear;
+    -o-transition: 500ms linear;
+    transition: 500ms linear;
+}
+.ldCover .ldContent > *{ color: #fff; }
+
+
+#main-cover .ldContent h2{
+    font-weight: 900;
+    text-transform: uppercase;
+}
+#main-cover .ldContent .buttons a{
+    font-size: 1.17rem;
+    margin: 10px;
+}
+/* ---------- Cover ----------*/
+
+
+/* ---------- Cards ----------*/
+.cards > div{
+    width: 100%;
+    display: block;
+}
+@media (min-width: 768px){
+    .cards > div{
+        width: 33.33333333%;
+        display: table-cell;
+    }
+}
+/* ---------- Cards ----------*/
+
+/* ---------- Sections ----------*/
+section{ padding: 3rem 0; }
+body > section,.no-padding{ padding: 0; }
+body > section.moduler-cmp{ display: none; }
+
+section > * > .title{ text-align: center; margin-bottom: 3rem; }
+.home > section{ background: #fafafa; }
+.home > section:nth-child(2n){ background: #fff; }
+
+/* ----- Who -----*/
+.whatwedo{
+    width: 100%;
+    text-align: center;
+}
+.whatwedo > div{ padding: 3rem; }
+.whatwedo > div,
+.whatwedo > div h3{
+    color: #fff;
+}
+.whatwedo .circle{
+    background: #fff;
+    border-radius: 500px;
+    width: 7rem;
+    height: 7rem;
+    font-size: 4rem;
+    display: inline-block;
+    color: #9e7d1c;
+    margin-bottom: 15px;
+}
+/* ----- Who -----*/
+
+/* ----- About Us -----*/
+/* ----- About Us -----*/
+
+/* ----- Services -----*/
+.services .card{ padding-bottom: 1rem; }
+.services .card .view{
+    position: relative;
+    padding: 2rem;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 0.5rem;
+}
+.services .card div.text{ padding-right: 4rem; }
+.services .card div.icon{
+    position: absolute;
+    display: inline-block;
+    top: 2rem;
+    right: 2rem;
+    color: #e86240;
+    font-size: 3rem;
+}
+@media (min-width: 768px){
+    .services .card{ padding: 0.5rem; }
+}
+/* ----- Services -----*/
+/* ----- Happening -----*/
+.happening .card{ padding-bottom: 1rem; }
+.happening .card .view{
+    position: relative;
+    font-size: 2.7rem;
+    padding: 2rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.happening .card .view *{ color: #fff; }
+.happening .card .number{ line-height: 1.8rem; }
+.happening .card .icon{
+    position: absolute;
+    display: inline-block;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 3rem;
+}
+@media (min-width: 768px){
+    .happening .card{ padding: 0.5rem; }
+}
+/* ----- Happening -----*/
+
+/* ----- Contact -----*/
+.contact-form{
+    color: #333;
+    margin-top: 2rem;
+}
+.contact-form form{
+    float: none;
+    margin: 0 auto;
+    text-align: left;
+}
+.contact-form label,
+.contact-form input,
+.contact-form button,
+.contact-form textarea{ display: block; margin-bottom: 1rem; }
+.contact-form label{
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+/* ----- Contact -----*/
+
+/* ----- Footer -----*/
+footer > div{ width: 100%; }
+footer > .footer{ background: #111; color: #888; padding: 3rem 0rem; }
+footer > .footer .container > div{
+    padding: 1rem;
+}
+footer > .footer h3{ color: #fff; }
+footer > .footer .service-area > div,
+footer > .footer .social-links > div{
+    margin-left: 2rem;
+}
+footer > .footer .service-area .icon,
+footer > .footer .social-links .icon{
+    position: relative;
+    left: -2rem;
+    width: 0;
+}
+footer > .footer .business-hours > p{ position: relative; }
+footer > .footer .business-hours > p > span{
+    position: absolute;
+    right: 0;
+}
+footer > .footer .business-hours .divisor{
+    width: 100%;
+    height: 1px;
+    background: #888;
+}
+footer > .subfooter{
+    color: #888;
+    background: #222;
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+/* ---------- Responsive ----------*/
+@media (min-width: 544px) and (max-width: 768px){
+    .container{
+        max-width: 574px;
+    }
+}
+@media (max-width: 435px){
+    #main-cover{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 350px){
+    html{
+        font-size: 13px;
+    }
+    #main-cover{
+        font-size: inherit;
+    }
+    .site-brand .site-title a{
+        font-size: 1.4rem;
+    }
+}
+
+/* ---------- Responsive ----------*/
