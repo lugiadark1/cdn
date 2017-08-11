@@ -66,19 +66,20 @@ a{
 }
 a:hover{ color: #777; }
 
-input,button,textarea,.ldButton{
+input,select,button,textarea,.ldButton{
     width: 100%;
     padding: 10px 15px;
     border: 1px solid #ccc;
     border-radius: 3px;
 }
-input:hover,button:hover,textarea:hover,.ldButton:hover{
+input:hover,select:hover,button:hover,textarea:hover,.ldButton:hover{
     opacity: 0.9
 }
-input:focus,textarea:focus{
+input:focus,textarea:focus,select:focus{
     border-color: #e86240;
     outline: none;
 }
+select{ background: #fff; }
 textarea{ max-width: 100%; }
 button,.ldButton{
     color: #fff;
@@ -101,6 +102,21 @@ button.secondary:hover,.ldButton.secondary:hover{
     opacity: 1;
     color: #444;
     background: #fff;
+}
+form{
+    color: #333;
+    text-align: left;
+    margin: 0 auto;
+    float: none !important;
+}
+form label,
+form input,
+form button,
+form select,
+form textarea{ display: block; margin-bottom: 1rem; }
+form label{
+    margin-bottom: 0;
+    text-transform: uppercase;
 }
 
 /* ---------- Nav Bar ----------*/
@@ -315,26 +331,6 @@ section > * > .title{ text-align: center; margin-bottom: 3rem; }
     .happening .card{ padding: 0.5rem; }
 }
 /* ----- Happening -----*/
-
-/* ----- Contact -----*/
-.contact-form{
-    color: #333;
-    margin-top: 2rem;
-}
-.contact-form form{
-    float: none;
-    margin: 0 auto;
-    text-align: left;
-}
-.contact-form label,
-.contact-form input,
-.contact-form button,
-.contact-form textarea{ display: block; margin-bottom: 1rem; }
-.contact-form label{
-    margin-bottom: 0;
-    text-transform: uppercase;
-}
-/* ----- Contact -----*/
 
 /* ----- Footer -----*/
 footer > div{ width: 100%; }

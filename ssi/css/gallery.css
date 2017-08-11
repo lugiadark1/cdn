@@ -1,0 +1,79 @@
+.gallery-mod{
+	width: 100%;
+	height: 18rem;
+}
+.gallery-mod .navigation,
+.gallery-mod .gallery-img,
+.gallery-mod .images,
+.gallery-mod .images > div{
+	width: inherit;
+	height: inherit;
+}
+.gallery-mod .images{
+	overflow-y: hidden;
+	overflow-x: scroll;
+}
+.gallery-mod .images > div{
+	width: max-content;
+}
+.gallery-mod .gallery-img{
+	position: relative;
+	float: left;
+	width: 9rem;
+	overflow: hidden;
+}
+.gallery-mod .gallery-img:hover > div{
+	width: 150%;
+	height: 150%;
+	top: -25%;
+	left: -25%;
+}
+.gallery-mod .gallery-img > div{
+	position: relative;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	background-size: cover;
+	background-position: center;
+	-webkit-transition: all 200ms ease-in-out;
+}
+
+.gallery-mod .full{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2000;
+	background: rgba(0,0,0,0.8);
+}
+.gallery-mod .full .frame{
+	position: absolute;
+	width: 80%;
+	height: 80%;
+	top: 10%;
+	left: 10%;
+	background-size: cover;
+	background-position: center;
+}
+.gallery-mod .full .exit{
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	color: #888;
+	border: 2px dashed #888;
+	padding: 0.1rem 0.7rem;
+	cursor: pointer;
+}
+.gallery-mod .full .exit:hover{
+	color: #fff;
+	border: 2px dashed #fff;
+}
+
+@media (min-width: 768px){
+	.gallery-mod .gallery-img{
+		width: 13rem;
+	}	
+}
