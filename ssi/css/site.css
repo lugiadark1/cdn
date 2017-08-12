@@ -210,7 +210,7 @@ nav button{ width: initial; }
 .ldCover .bg-screener > div{
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.6);
 }
 .ldCover .ldContent{
     position: relative;
@@ -311,12 +311,22 @@ section > * > .title{ text-align: center; margin-bottom: 3rem; }
 /* ----- Happening -----*/
 .happening .card{ padding-bottom: 1rem; }
 .happening .card .view{
+    cursor: default;
+    width: 100%;
+    margin: 0 auto;
     position: relative;
     font-size: 2.7rem;
     padding: 2rem;
     overflow: hidden;
     border-radius: 0.5rem;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-transition: 200ms linear;
+    -moz-transition: 200ms linear;
+    -o-transition: 200ms linear;
+    transition: 200ms linear;
+}
+.happening .card .view:hover{
+	width: 90%;
 }
 .happening .card .view *{ color: #fff; }
 .happening .card .number{ line-height: 1.8rem; }
