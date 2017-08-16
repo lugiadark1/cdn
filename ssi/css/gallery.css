@@ -14,11 +14,10 @@
 	overflow-x: scroll;
 }
 .gallery-mod .images > div{
-	width: max-content;
+    white-space: nowrap;
 }
 .gallery-mod .gallery-img{
-	position: relative;
-	float: left;
+	display: inline-block;
 	width: 9rem;
 	overflow: hidden;
 }
