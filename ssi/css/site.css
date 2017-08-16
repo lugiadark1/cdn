@@ -203,14 +203,23 @@ nav button{ width: initial; }
     top: 0px;
     bottom: 0px;
     width: 100%;
+}
+.ldCover .bg-screener::after{
+    background: rgba(0,0,0,0.6);
+}
+.ldCover .bg-screener::before{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
-.ldCover .bg-screener > div{
+.ldCover .bg-screener::after,
+.ldCover .bg-screener::before{
+    content: " ";
+    display: block;
+    position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.6);
+    top: 0;
 }
 .ldCover .ldContent{
     position: relative;
