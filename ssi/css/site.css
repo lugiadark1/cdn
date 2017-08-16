@@ -134,6 +134,8 @@ nav button{ width: initial; }
     padding: 5px 0px;
     background: rgba(0,0,0,0.8);
 }
+.navbar-transparent #navbar{ background: rgba(0,0,0,0.5); }
+.navbar-transparent.darked #navbar{ background: none; }
 .navbar-transparent .navbar-nav li > a{ color: #fff; }
 .navbar-transparent .navbar-toggle .icon-bar{ background-color: #fff; height: 3px; }
 .navbar-transparent .nav li > a:hover,
